@@ -1,0 +1,162 @@
+/*
+ selecionar por
+ 1.id
+ 2.selecionar multi ids
+ 3.tag mais id
+*/
+
+#titulo {
+}
+
+#subtitulo,
+#texto-intro {
+}
+
+h1#titulo {
+}
+
+/*
+ selecionar por 
+ 1.classe 
+ 2.multiclasse 
+ 3.tag mais classe 
+ 4.tenha id e classe
+*/
+
+.titulo {
+}
+
+.subtitulo,
+.texto-intro {
+}
+
+h1.titulo {
+}
+
+#paragrafo.titulo {
+}
+
+/*
+ selecionar 
+ 1.descendente 
+ 2.descendente com diferentes tags 
+ 3.descendente com id
+*/
+
+section section {
+}
+
+section p strong {
+}
+
+section#top2 p strong {
+}
+
+/*
+ selecionar 
+ 1.descendente direto
+*/
+
+strong > p {
+}
+
+/*
+ selecionar 
+ 1.irmãs
+*/
+
+div ~ p {
+}
+
+div.user-comments ~ div ~ p {
+}
+
+/*'f
+ selecionar 
+ 1.irmão imediato
+*/
+
+li + li {
+}
+
+/*
+ selecionar 
+ 1.selecionar atributo 
+ 2.selecionar tag com atributo 
+ 3.selecionar pelo valor do atributo
+ 4.selecionar pelo atributo que contenha certo texto
+ 5.selecionar pelo atributo que comece com valor seguido por traço e outros valores
+ 6.selecionar pelo atributo que comece com tal valor
+ 7.selecionar pelo sufixo do atributo
+ 8.Seleciona atributo que tenha ao menos uma ocorrencia do valor especificado
+ 9.Qualquer seletor de atributo case insensitive
+*/
+
+div[class] {
+}
+
+[height] {
+}
+
+[data-category="Bolo"] {
+}
+
+[data-recipe~="de"]{
+}
+
+[data-recipe|="user"]{
+}
+
+[data-recipe^="pass"]{
+}
+
+[data-recipe$="pass"]{
+}
+
+[data-recipe*="pass"]{
+}
+/*(qualquer um dos anteriores)*/
+[data-recipe="pass" i]{
+}
+
+/*Seletor universal, seleciona todos os elementos*/
+*{
+}
+
+h1 * {
+
+}
+
+/*Multi seletores, ambos exemplos fazem as mesmas coisas*/
+h1,[required]{
+}
+
+:is(h1, .time){
+}
+
+/* Funções */
+
+/* Quer excluir determinado elemento */
+h1 :not(.login){
+}
+
+/* Todo filho de h1 que não seja da classe login, ou seja paragráfo */
+h1 > :not(.login, p){
+}
+
+/* nth-child: Seleciona um filho especifico dentro de um conjunto de elemento, começa o index no 1 */
+
+/* Seleciona o segundo elemento filho de li*/
+.tips li:nth-child(2){
+}
+
+/* first-child: Seleciona o primeiro filho */
+
+.tips li:first-child{
+}
+
+
+/* last-child: Seleciona o ultimo filho */
+
+.tips li:last-child{
+}
